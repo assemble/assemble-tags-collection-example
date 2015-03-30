@@ -62,6 +62,29 @@ function plugin(template) {
   });
 }
 
+/**
+ * Generate a array of unique tags from the front matter
+ * of all files.
+ */
+
+function aggregateTags(files) {
+  var len = files.length;
+  var tags = [];
+
+  while (len--) {
+    var data = files[len].data;
+    if (data.tags) {
+      tags = tags.concat(data.tags);
+    }
+  }
+  return unique(tags);
+}
+
+/**
+ * Get the data we need from each file, so we can build
+ * links to each file, for each tag.
+ */
+
 function buildLinks(tags, files) {
   var res = {};
   tags.sort();
@@ -82,17 +105,4 @@ function buildLinks(tags, files) {
     }
   }
   return res;
-}
-
-function aggregateTags(files) {
-  var len = files.length;
-  var tags = [];
-
-  while (len--) {
-    var data = files[len].data;
-    if (data.tags) {
-      tags = tags.concat(data.tags);
-    }
-  }
-  return unique(tags);
 }
