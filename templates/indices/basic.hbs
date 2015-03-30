@@ -1,0 +1,13 @@
+<section>
+  <h1>Tags</h1>
+  {{#each tags}}
+  <div class="block tags">
+    <h2>tag: {{name}}</h2>
+    <ul class="list">
+      {{#each .}}
+      <li><a href="{{basename}}">{{uppercase name}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/each}}
+</section>
