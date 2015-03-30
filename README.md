@@ -1,4 +1,4 @@
-# assemble-tags-collection-example [![NPM version](https://badge.fury.io/js/assemble-tags-collection-example.svg)](http://badge.fury.io/js/assemble-tags-collection-example)  undefined 
+# assemble-tags-collection-example 
 
 > Example of how to create a collection with assemble.
 
