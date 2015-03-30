@@ -2,18 +2,21 @@
 
 > Example of how to create a collection with assemble.
 
-## Install with [npm](npmjs.org)
+## Get started
+
+Clone the project
 
 ```bash
-npm i assemble-tags-collection-example --save
+$ git clone https://github.com/assemble/assemble-tags-collection-example.git
 ```
+
 
 ## Usage
 
 Install dev dependencies and run `assemble`
 
-```js
-npm i -d && assemble
+```bash
+$ npm i -d && assemble
 ```
 
 
